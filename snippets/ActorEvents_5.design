@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <event-custom comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <play-sound4 comment="false" x="26" y="40">
+                    <int id="0" val="0"/>
+                    <sound eid="15" id="1"/>
+                </play-sound4>
+                <create-actor3 comment="false" x="26" y="67">
+                    <actortype eid="38" id="0"/>
+                    <plus comment="false" id="1" x="0" y="0">
+                        <get-xy comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                        </get-xy>
+                        <get-wh comment="false" id="1" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="2"/>
+                        </get-wh>
+                    </plus>
+                    <plus comment="false" id="2" x="0" y="0">
+                        <get-xy comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="1"/>
+                        </get-xy>
+                        <get-wh comment="false" id="1" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="3"/>
+                        </get-wh>
+                    </plus>
+                    <int id="3" val="0"/>
+                </create-actor3>
+                <push-shove2 comment="false" x="26" y="112">
+                    <ACTOR eid="lastcreated" id="0"/>
+                    <int id="1" val="1"/>
+                    <randint comment="false" id="2" x="0" y="0">
+                        <int id="0" val="225"/>
+                        <int id="1" val="315"/>
+                    </randint>
+                    <int id="3" val="40"/>
+                </push-shove2>
+            </group>
+            <int id="0" val="HandleDeath"/>
+        </event-custom>
+    </group>
+    <group eventID="1" id="-1"/>
+</groups>
