@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <event-periodic comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <set-val-35-3 comment="false" x="26" y="47">
+                    <minus comment="false" id="0" x="0" y="0">
+                        <get-val-35-3 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0.5"/>
+                    </minus>
+                </set-val-35-3>
+                <play-sound4 comment="false" x="26" y="77">
+                    <int id="0" val="0"/>
+                    <sound eid="69" id="1"/>
+                </play-sound4>
+                <create-actor-on-layer comment="false" x="26" y="104">
+                    <actortype eid="67" id="0"/>
+                    <minus comment="false" id="1" x="0" y="0">
+                        <get-xy comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="2"/>
+                        </get-xy>
+                        <int id="1" val="10"/>
+                    </minus>
+                    <int id="2" val="175"/>
+                    <int id="3" val="1"/>
+                    <int id="4" val="Layer 0"/>
+                </create-actor-on-layer>
+            </group>
+            <get-val-35-3 comment="false" id="0" x="0" y="0"/>
+            <ACTOR eid="this" id="2"/>
+        </event-periodic>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <set-val-35-3 comment="false" x="26" y="40">
+                    <int id="0" val="5"/>
+                </set-val-35-3>
+            </group>
+        </init>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>

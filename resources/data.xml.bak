@@ -27,7 +27,7 @@
     </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="4" name="Archer" readable="false" shared="false">
         <anim across="2" down="1" durations="300,300" height="75" id="0" loop="true" name="Animation 0" numframes="2" originx="37" originy="37" sync="false" version="2" width="150">
-            <poly data="4,0,0,75,0,75,75,0,75" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+            <poly data="4,10,5,60,5,60,70,10,70" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="26" fixedrot="false" fric="0.2" gid="3" id="36" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="ArcherDeath" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="37" static="false">
@@ -54,6 +54,7 @@
             <poly data="4,0,0,150,0,150,150,0,150" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
+    <music atlasID="0" desc="" id="66" loop="true" name="BossMusic" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
     <music atlasID="0" desc="pew" id="45" loop="true" name="Cannon Fire" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="480" id="18" name="Castle grounds" numframes="1" oid="-1" readable="false" repeats="false" resized="false" shared="false" width="640" xpf="1.0" ypf="1.0"/>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="500" id="40" name="Castle Grounds" numframes="1" oid="-1" readable="false" repeats="false" resized="false" shared="false" width="675" xpf="1.0" ypf="1.0"/>
@@ -104,8 +105,51 @@
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="12" name="CrusaderDeath" readable="false" shared="false">
         <anim across="2" down="2" durations="100,100,100,100" height="150" id="0" loop="true" name="wheeeeeee" numframes="4" originx="37" originy="37" sync="false" version="2" width="150"/>
     </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="35" fixedrot="true" fric="0.2" gid="4" id="64" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="Dergun" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="65" static="false">
+        <snippets>
+            <s enabled="false" id="1">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="1" list="0" val="1.0"/>
+            </s>
+            <s enabled="true" id="34">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="1" list="0" val="false"/>
+                <prop id="2" list="0" val="4.5"/>
+            </s>
+            <s enabled="false" id="23">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="1" list="0" val="10.0"/>
+                <prop id="2" list="0" val="1.0"/>
+                <prop id="3" list="0" val="-1"/>
+                <prop id="5" list="0" val="5.0"/>
+                <prop id="6" list="0" val="-1"/>
+                <prop id="7" list="0" val="0.7"/>
+                <prop id="8" list="0" val="15"/>
+            </s>
+        </snippets>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="65" name="Dergun" readable="false" shared="false">
+        <anim across="2" down="1" durations="300,300" height="250" id="0" loop="true" name="Animation 0" numframes="2" originx="250" originy="125" sync="false" version="2" width="1000">
+            <poly data="4,175,140,315,140,315,250,175,250" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="2" down="1" durations="100,100" height="250" id="1" loop="true" name="Hurt" numframes="2" originx="250" originy="125" sync="false" version="2" width="1000"/>
+    </sprite>
     <music atlasID="0" desc="" id="15" loop="true" name="Explode" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
     <music atlasID="0" desc="" id="52" loop="true" name="Explosion1" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="37" fixedrot="false" fric="0.2" gid="4" id="67" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Fireball" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="68" static="false">
+        <snippets>
+            <s enabled="true" id="1">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="1" list="0" val="1.0"/>
+            </s>
+        </snippets>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="68" name="Fireball" readable="false" shared="false">
+        <anim across="2" down="1" durations="100,100" height="75" id="0" loop="true" name="Animation 0" numframes="2" originx="37" originy="37" sync="false" version="2" width="150">
+            <poly data="4,10,0,60,0,60,75,10,75" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <music atlasID="0" desc="" id="69" loop="true" name="FireballRoar" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
     <music atlasID="0" desc="" id="50" loop="true" name="GameMusic" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
     <music atlasID="0" desc="" id="51" loop="true" name="IntroMusic" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
     <music atlasID="0" desc="" id="55" loop="true" name="oof" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <set-dxy comment="false" x="26" y="40">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="1"/>
+                    <int id="2" val="12"/>
+                </set-dxy>
+                <if comment="false" x="26" y="67">
+                    <group eventID="1" id="-1">
+                        <set-dxy comment="false" x="37" y="110">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                            <div comment="false" id="2" x="0" y="0">
+                                <minus comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="310"/>
+                                    <get-xy comment="false" id="1" x="0" y="0">
+                                        <ACTOR eid="this" id="0"/>
+                                        <int id="1" val="0"/>
+                                    </get-xy>
+                                </minus>
+                                <int id="1" val="12"/>
+                            </div>
+                        </set-dxy>
+                    </group>
+                    <or comment="false" id="0" x="0" y="0">
+                        <lesseq comment="false" id="0" x="0" y="0">
+                            <get-xy comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="this" id="0"/>
+                                <int id="1" val="0"/>
+                            </get-xy>
+                            <int id="1" val="275"/>
+                        </lesseq>
+                        <moreeq comment="false" id="1" x="0" y="0">
+                            <get-xy comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="this" id="0"/>
+                                <int id="1" val="0"/>
+                            </get-xy>
+                            <int id="1" val="345"/>
+                        </moreeq>
+                    </or>
+                </if>
+            </group>
+        </init>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <step comment="false" x="26" y="0">
+            <group eventID="2" id="-1">
+                <if comment="false" x="37" y="25">
+                    <group eventID="2" id="-1">
+                        <set-volume-channel comment="false" x="48" y="73">
+                            <int id="0" val="80"/>
+                            <int id="1" val="1"/>
+                        </set-volume-channel>
+                        <play-sound-channel comment="false" x="48" y="93">
+                            <int id="0" val="0"/>
+                            <sound eid="55" id="1"/>
+                            <int id="2" val="1"/>
+                        </play-sound-channel>
+                        <scene-reload-new comment="false" x="48" y="120">
+                            <int id="0" val="0"/>
+                            <int id="1" val="0.3"/>
+                            <int id="2" val="0"/>
+                            <int id="3" val="0.3"/>
+                        </scene-reload-new>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <and comment="false" id="0" x="0" y="0">
+                            <lesseq comment="false" id="0" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="0"/>
+                                </get-xy>
+                                <int id="1" val="345"/>
+                            </lesseq>
+                            <moreeq comment="false" id="1" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="0"/>
+                                </get-xy>
+                                <int id="1" val="275"/>
+                            </moreeq>
+                        </and>
+                        <moreeq comment="false" id="1" x="0" y="0">
+                            <get-xy comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="this" id="0"/>
+                                <int id="1" val="1"/>
+                            </get-xy>
+                            <minus comment="false" id="1" x="0" y="0">
+                                <scene-wh comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="1"/>
+                                </scene-wh>
+                                <int id="1" val="159"/>
+                            </minus>
+                        </moreeq>
+                    </and>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>

@@ -28,7 +28,7 @@
                                     </plus>
                                 </set-val-0-2>
                                 <dolater comment="false" x="48" y="257">
-                                    <group eventID="-1" id="-1">
+                                    <group eventID="1" id="-1">
                                         <set-game-val-2 comment="false" x="59" y="284">
                                             <false comment="false" id="0" x="0" y="0"/>
                                         </set-game-val-2>

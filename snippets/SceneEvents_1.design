@@ -23,16 +23,21 @@
                     <group eventID="5" id="-1">
                         <stop-sounds comment="false" x="37" y="107"/>
                         <play-sound4 comment="false" x="37" y="127">
-                            <int id="0" val="0"/>
-                            <sound eid="57" id="1"/>
+                            <int id="0" val="1"/>
+                            <sound eid="66" id="1"/>
                         </play-sound4>
                         <dolater comment="false" x="37" y="154">
                             <group eventID="5" id="-1">
-                                <scene-change-through comment="false" x="48" y="181">
-                                    <scene eid="3" id="0"/>
-                                    <int id="1" val="2"/>
+                                <create-actor-on-layer comment="false" x="48" y="181">
+                                    <actortype eid="64" id="0"/>
+                                    <int id="1" val="75"/>
                                     <int id="2" val="0"/>
-                                </scene-change-through>
+                                    <int id="3" val="1"/>
+                                    <int id="4" val="Layer0"/>
+                                </create-actor-on-layer>
+                                <set-val-21-2 comment="false" x="48" y="208">
+                                    <int id="0" val="15"/>
+                                </set-val-21-2>
                             </group>
                             <int id="0" val="1"/>
                             <ACTOR eid="lastcreated" id="2"/>
@@ -48,6 +53,13 @@
             <actortype eid="9" id="1"/>
         </event-collide-typetotype>
     </group>
+    <group eventID="5" id="1">
+        <scene-change-through comment="false" x="110" y="320">
+            <scene eid="3" id="0"/>
+            <int id="1" val="2"/>
+            <int id="2" val="0"/>
+        </scene-change-through>
+    </group>
     <group eventID="5" id="-1"/>
     <group eventID="6" id="0">
         <event-collide-typetotype comment="false" x="15" y="15">
@@ -62,16 +74,21 @@
                     <group eventID="6" id="-1">
                         <stop-sounds comment="false" x="37" y="107"/>
                         <play-sound4 comment="false" x="37" y="127">
-                            <int id="0" val="0"/>
-                            <sound eid="57" id="1"/>
+                            <int id="0" val="1"/>
+                            <sound eid="66" id="1"/>
                         </play-sound4>
                         <dolater comment="false" x="37" y="154">
                             <group eventID="6" id="-1">
-                                <scene-change-through comment="false" x="48" y="181">
-                                    <scene eid="3" id="0"/>
-                                    <int id="1" val="2"/>
+                                <create-actor-on-layer comment="false" x="48" y="181">
+                                    <actortype eid="64" id="0"/>
+                                    <int id="1" val="75"/>
                                     <int id="2" val="0"/>
-                                </scene-change-through>
+                                    <int id="3" val="1"/>
+                                    <int id="4" val="Layer0"/>
+                                </create-actor-on-layer>
+                                <set-val-21-2 comment="false" x="48" y="208">
+                                    <int id="0" val="15"/>
+                                </set-val-21-2>
                             </group>
                             <int id="0" val="1"/>
                             <ACTOR eid="lastcreated" id="2"/>
@@ -87,6 +104,13 @@
             <actortype eid="9" id="1"/>
         </event-collide-typetotype>
     </group>
+    <group eventID="6" id="2">
+        <scene-change-through comment="false" x="60" y="355">
+            <scene eid="3" id="0"/>
+            <int id="1" val="2"/>
+            <int id="2" val="0"/>
+        </scene-change-through>
+    </group>
     <group eventID="6" id="-1"/>
     <group eventID="7" id="0">
         <event-collide-typetotype comment="false" x="15" y="15">
@@ -100,31 +124,102 @@
                 <if comment="false" x="26" y="77">
                     <group eventID="7" id="-1">
                         <stop-sounds comment="false" x="37" y="107"/>
+                        <play-sound4 comment="false" x="37" y="127">
+                            <int id="0" val="1"/>
+                            <sound eid="66" id="1"/>
+                        </play-sound4>
+                        <dolater comment="false" x="37" y="154">
+                            <group eventID="7" id="-1">
+                                <create-actor-on-layer comment="false" x="48" y="181">
+                                    <actortype eid="64" id="0"/>
+                                    <int id="1" val="75"/>
+                                    <int id="2" val="0"/>
+                                    <int id="3" val="1"/>
+                                    <int id="4" val="Layer0"/>
+                                </create-actor-on-layer>
+                                <set-val-21-2 comment="false" x="48" y="208">
+                                    <int id="0" val="15"/>
+                                </set-val-21-2>
+                            </group>
+                            <int id="0" val="1"/>
+                            <ACTOR eid="lastcreated" id="2"/>
+                        </dolater>
                     </group>
                     <eq comment="false" id="0" x="0" y="0">
                         <get-val-21-1 comment="false" id="0" x="0" y="0"/>
                         <int id="1" val="0"/>
                     </eq>
                 </if>
-                <dolater comment="false" x="26" y="139">
-                    <group eventID="7" id="-1">
-                        <play-sound4 comment="false" x="37" y="166">
-                            <int id="0" val="0"/>
-                            <sound eid="57" id="1"/>
-                        </play-sound4>
-                        <scene-change-through comment="false" x="37" y="193">
-                            <scene eid="3" id="0"/>
-                            <int id="1" val="2"/>
-                            <int id="2" val="0"/>
-                        </scene-change-through>
-                    </group>
-                    <int id="0" val="1"/>
-                    <ACTOR eid="lastcreated" id="2"/>
-                </dolater>
             </group>
             <actortype eid="7" id="0"/>
             <actortype eid="9" id="1"/>
         </event-collide-typetotype>
     </group>
+    <group eventID="7" id="1">
+        <scene-change-through comment="false" x="111" y="263">
+            <scene eid="3" id="0"/>
+            <int id="1" val="2"/>
+            <int id="2" val="0"/>
+        </scene-change-through>
+    </group>
     <group eventID="7" id="-1"/>
+    <group eventID="8" id="0">
+        <event-collide-typetotype comment="false" x="15" y="15">
+            <group eventID="8" id="-1">
+                <die comment="false" x="26" y="47">
+                    <other-actor comment="false" id="0" x="0" y="0"/>
+                </die>
+                <setanim comment="false" x="26" y="79">
+                    <first-actor comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="Hurt"/>
+                </setanim>
+                <dolater comment="false" x="26" y="111">
+                    <group eventID="8" id="-1">
+                        <setanim comment="false" x="37" y="138">
+                            <first-actor comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="Animation 0"/>
+                        </setanim>
+                        <set-val-21-2 comment="false" x="37" y="170">
+                            <minus comment="false" id="0" x="0" y="0">
+                                <get-val-21-2 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="1"/>
+                            </minus>
+                        </set-val-21-2>
+                        <if comment="false" x="37" y="200">
+                            <group eventID="8" id="-1">
+                                <die comment="false" x="48" y="230">
+                                    <first-actor comment="false" id="0" x="0" y="0"/>
+                                </die>
+                                <stop-sounds comment="false" x="48" y="262"/>
+                                <play-sound4 comment="false" x="48" y="282">
+                                    <int id="0" val="0"/>
+                                    <sound eid="57" id="1"/>
+                                </play-sound4>
+                                <dolater comment="false" x="48" y="309">
+                                    <group eventID="8" id="-1">
+                                        <scene-change-through comment="false" x="59" y="336">
+                                            <scene eid="3" id="0"/>
+                                            <int id="1" val="2"/>
+                                            <int id="2" val="0"/>
+                                        </scene-change-through>
+                                    </group>
+                                    <int id="0" val="1"/>
+                                    <ACTOR eid="lastcreated" id="2"/>
+                                </dolater>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-val-21-2 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="0"/>
+                            </eq>
+                        </if>
+                    </group>
+                    <int id="0" val="1.8"/>
+                    <ACTOR eid="lastcreated" id="2"/>
+                </dolater>
+            </group>
+            <actortype eid="64" id="0"/>
+            <actortype eid="9" id="1"/>
+        </event-collide-typetotype>
+    </group>
+    <group eventID="8" id="-1"/>
 </groups>

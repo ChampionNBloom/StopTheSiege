@@ -137,12 +137,14 @@
     </snippet>
     <snippet attachedevent="true" class="scripts.SceneEvents_1" classname="scripts.SceneEvents_1" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="21" name="SceneEvents_1" oid="-1" package="scripts." sceneid="1" shared="false" type="scene">
         <number default="0" defaultValue="0" desc="" dropdown="" fullname="EnemyCount" hidden="false" id="1" name="_EnemyCount" order="0"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Health" hidden="false" id="2" name="_Health" order="1"/>
         <blocks/>
         <events>
             <event displayName="Created" enabled="true" id="4" name="init" order="3" repeats="true"/>
             <event displayName="Type - Type" enabled="true" id="5" name="event-collide-typetotype" order="5" repeats="true"/>
-            <event displayName="Type - Type Copy" enabled="true" id="6" name="event-collide-typetotype" order="6" repeats="true"/>
-            <event displayName="Type - Type Copy Copy" enabled="true" id="7" name="event-collide-typetotype" order="7" repeats="true"/>
+            <event displayName="Type - Type Copy" enabled="true" id="6" name="event-collide-typetotype" order="7" repeats="true"/>
+            <event displayName="Type - Type Copy Copy" enabled="true" id="7" name="event-collide-typetotype" order="8" repeats="true"/>
+            <event displayName="Type - Type" enabled="true" id="8" name="event-collide-typetotype" order="6" repeats="true"/>
         </events>
     </snippet>
     <snippet actorid="7" attachedevent="true" class="scripts.ActorEvents_7" classname="scripts.ActorEvents_7" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="22" name="ActorEvents_7" oid="-1" package="scripts." shared="false" type="actor">
@@ -206,5 +208,46 @@
     <snippet actorid="58" attachedevent="true" class="scripts.ActorEvents_58" classname="scripts.ActorEvents_58" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="32" name="ActorEvents_58" oid="-1" package="scripts." shared="false" type="actor">
         <blocks/>
         <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_34_34_BossMove" classname="scripts.Design_34_34_BossMove" desc="" description="" design="true" drawOrder="0" id="34" name="BossMove" oid="-1" package="scripts" shared="false" type="actor">
+        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="Slid and Increased for Self" hidden="true" id="1" name="_SlidandIncreasedforSelf" order="1"/>
+        <number default="2.0" defaultValue="2.0" desc="" dropdown="" fullname="Movement Speed" hidden="false" id="2" name="_MovementSpeed" order="2"/>
+        <blocks/>
+        <events>
+            <event displayName="Updating" enabled="true" id="2" name="step" order="2" repeats="true"/>
+            <event displayName="Created" enabled="true" id="3" name="init" order="3" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet actorid="64" attachedevent="true" class="scripts.ActorEvents_64" classname="scripts.ActorEvents_64" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="35" name="ActorEvents_64" oid="-1" package="scripts." shared="false" type="actor">
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="Health" hidden="false" id="1" name="_Health" order="0"/>
+        <actor default="" defaultValue="" desc="" dropdown="" fullname="Timer" hidden="false" id="2" name="_Timer" order="1"/>
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="FireballTimer" hidden="false" id="3" name="_FireballTimer" order="2"/>
+        <boolean default="true" defaultValue="true" desc="" dropdown="" fullname="Can Fire?" hidden="true" id="4" name="_CanFire" order="3"/>
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="Fired" hidden="true" id="5" name="_Fired" order="4"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="X Offset" hidden="false" id="6" name="_XOffset" order="5"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Y Offset" hidden="false" id="7" name="_YOffset" order="6"/>
+        <actor default="" defaultValue="" desc="" dropdown="" fullname="Bullet Created" hidden="true" id="8" name="_BulletCreated" order="7"/>
+        <number default="0.0" defaultValue="0.0" desc="Which way does the shooter face by default?" dropdown="North=90&#10;North East=45&#10;East=0&#10;South East=315&#10;South=270&#10;South West=225&#10;West=180&#10;North West=135" fullname="Inital Shooter Angle" hidden="false" id="9" name="shooterangle" order="8"/>
+        <number default="270.0" defaultValue="270.0" desc="Which way does the bullet face by default?" dropdown="North=90&#10;North East=45&#10;East=0&#10;South East=315&#10;South=270&#10;South West=225&#10;West=180&#10;North West=135" fullname="Inital Bullet Angle" hidden="false" id="10" name="bulletangle" order="9"/>
+        <number default="0.0" defaultValue="0.0" desc="How fast the spawned actor should move. Stick to positive numbers." dropdown="" fullname="Speed" hidden="false" id="11" name="speed" order="10"/>
+        <blocks/>
+        <events>
+            <event displayName="Every N secs" enabled="true" id="1" name="event-periodic" order="1" repeats="true"/>
+            <event displayName="Created" enabled="true" id="2" name="init" order="2" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.SceneEvents_4" classname="scripts.SceneEvents_4" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="36" name="SceneEvents_4" oid="-1" package="scripts." sceneid="4" shared="false" type="scene">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet actorid="67" attachedevent="true" class="scripts.ActorEvents_67" classname="scripts.ActorEvents_67" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="37" name="ActorEvents_67" oid="-1" package="scripts." shared="false" type="actor">
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="Slid and Increased for Self" hidden="true" id="1" name="_SlidandIncreasedforSelf" order="0"/>
+        <number default="2.0" defaultValue="2.0" desc="" dropdown="" fullname="Movement Speed" hidden="false" id="2" name="_MovementSpeed" order="1"/>
+        <blocks/>
+        <events>
+            <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
+            <event displayName="Updating" enabled="true" id="2" name="step" order="2" repeats="true"/>
+        </events>
     </snippet>
 </pack>
