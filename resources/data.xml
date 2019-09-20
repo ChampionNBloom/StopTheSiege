@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <pack>
+    <custom-block blocktag="custom-56" blocktype="ACTION" code="sayToScene(&quot;SceneEvents_1&quot;, &quot;_customBlock_&quot;);" desc="" global="false" gui="Missing" id="56" message="" name="" oid="-1" return="void" shared="false" snippetID="21"/>
     <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="25" fixedrot="true" fric="0.2" gid="4" id="3" ignoreg="true" inertia="0.01" ldamp="0.0" mass="0.1" name="Archer" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="4" static="false">
         <snippets>
             <s enabled="true" id="0">
@@ -41,21 +42,22 @@
         <snippets/>
     </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="28" name="B_Quit" readable="false" shared="false">
-        <anim across="1" down="1" durations="100" height="50" id="0" loop="true" name="Animation 0" numframes="1" originx="100" originy="25" sync="false" version="2" width="200">
-            <poly data="4,0,0,200,0,200,50,0,50" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        <anim across="3" down="3" durations="100,100,100,100,100,100,100,100" height="450" id="0" loop="false" name="Animation 0" numframes="8" originx="75" originy="75" sync="false" version="2" width="450">
+            <poly data="4,0,0,150,0,150,150,0,150" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="18" fixedrot="false" fric="0.2" gid="3" id="25" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="B_Start" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="26" static="false">
         <snippets/>
     </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="26" name="B_Start" readable="false" shared="false">
-        <anim across="1" down="1" durations="100" height="50" id="0" loop="true" name="Animation 0" numframes="1" originx="100" originy="25" sync="false" version="2" width="200">
-            <poly data="4,0,0,200,0,200,50,0,50" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        <anim across="3" down="3" durations="100,100,100,100,100,100,100,100" height="450" id="0" loop="false" name="Animation 0" numframes="8" originx="75" originy="75" sync="false" version="2" width="450">
+            <poly data="4,0,0,150,0,150,150,0,150" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
     <music atlasID="0" desc="pew" id="45" loop="true" name="Cannon Fire" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="480" id="18" name="Castle grounds" numframes="1" oid="-1" readable="false" repeats="false" resized="false" shared="false" width="640" xpf="1.0" ypf="1.0"/>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="500" id="40" name="Castle Grounds" numframes="1" oid="-1" readable="false" repeats="false" resized="false" shared="false" width="675" xpf="1.0" ypf="1.0"/>
+    <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="500" id="48" name="Castle Wall" numframes="1" oid="-1" readable="false" repeats="false" resized="false" shared="false" width="675" xpf="1.0" ypf="1.0"/>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="29" fixedrot="false" fric="0.2" gid="3" id="43" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="CastleTower" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="44" static="false">
         <snippets/>
     </actor>
@@ -103,6 +105,10 @@
         <anim across="2" down="2" durations="100,100,100,100" height="150" id="0" loop="true" name="wheeeeeee" numframes="4" originx="37" originy="37" sync="false" version="2" width="150"/>
     </sprite>
     <music atlasID="0" desc="" id="15" loop="true" name="Explode" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
+    <music atlasID="0" desc="" id="52" loop="true" name="Explosion1" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
+    <music atlasID="0" desc="" id="50" loop="true" name="GameMusic" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
+    <music atlasID="0" desc="" id="51" loop="true" name="IntroMusic" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
+    <music atlasID="0" desc="" id="55" loop="true" name="oof" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
     <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="-1" fixedrot="true" fric="0.2" gid="3" id="13" ignoreg="false" inertia="0.01" ldamp="0.0" mass="0.1" name="Particle Bigger" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="14" static="false">
         <snippets>
             <s enabled="true" id="8">
@@ -178,6 +184,8 @@
             <poly data="4,29,28,54,28,54,53,29,53" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="true"/>
         </anim>
     </sprite>
+    <music atlasID="0" desc="" id="53" loop="true" name="Scream1" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
+    <music atlasID="0" desc="" id="54" loop="true" name="Scream2" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
     <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="27" fixedrot="true" fric="0.2" gid="4" id="5" ignoreg="true" inertia="0.01" ldamp="0.0" mass="0.1" name="Spearman Crusader" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="6" static="false">
         <snippets>
             <s enabled="true" id="0">
@@ -214,4 +222,21 @@
             <poly data="4,0,0,75,0,75,75,0,75" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="30" fixedrot="false" fric="0.2" gid="3" id="46" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Title" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="47" static="false">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="47" name="Title" readable="false" shared="false">
+        <anim across="1" down="1" durations="100" height="375" id="0" loop="true" name="Animation 0" numframes="1" originx="187" originy="187" sync="false" version="2" width="375">
+            <poly data="4,0,0,375,0,375,375,0,375" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="32" fixedrot="false" fric="0.2" gid="3" id="58" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Win" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="59" static="false">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="59" name="Win" readable="false" shared="false">
+        <anim across="1" down="1" durations="100" height="375" id="0" loop="true" name="Animation 0" numframes="1" originx="187" originy="187" sync="false" version="2" width="375">
+            <poly data="4,0,0,375,0,375,375,0,375" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <music atlasID="0" desc="" id="57" loop="true" name="YouWin" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
 </pack>

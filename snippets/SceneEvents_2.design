@@ -27,7 +27,39 @@
                 </print>
                 <if comment="false" x="50" y="97">
                     <group eventID="2" id="-1">
-                        <set-val-16-2 comment="false" x="61" y="127">
+                        <set-val-16-3 comment="false" x="61" y="127">
+                            <true comment="false" id="0" x="0" y="0"/>
+                        </set-val-16-3>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-16-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="180"/>
+                    </eq>
+                </if>
+                <if comment="false" x="50" y="164">
+                    <group eventID="2" id="-1">
+                        <set-val-16-3 comment="false" x="61" y="194">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </set-val-16-3>
+                        <create-actor3 comment="false" x="61" y="219">
+                            <actortype eid="46" id="0"/>
+                            <int id="1" val="125"/>
+                            <int id="2" val="50"/>
+                            <int id="3" val="0"/>
+                        </create-actor3>
+                        <play-sound4 comment="false" x="61" y="246">
+                            <int id="0" val="1"/>
+                            <sound eid="51" id="1"/>
+                        </play-sound4>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-16-3 comment="false" id="0" x="0" y="0"/>
+                        <true comment="false" id="1" x="0" y="0"/>
+                    </eq>
+                </if>
+                <if comment="false" x="50" y="285">
+                    <group eventID="2" id="-1">
+                        <set-val-16-2 comment="false" x="61" y="315">
                             <true comment="false" id="0" x="0" y="0"/>
                         </set-val-16-2>
                     </group>
@@ -36,21 +68,21 @@
                         <int id="1" val="270"/>
                     </eq>
                 </if>
-                <if comment="false" x="50" y="164">
+                <if comment="false" x="50" y="352">
                     <group eventID="2" id="-1">
-                        <set-val-16-2 comment="false" x="61" y="194">
+                        <set-val-16-2 comment="false" x="61" y="382">
                             <false comment="false" id="0" x="0" y="0"/>
                         </set-val-16-2>
-                        <create-actor3 comment="false" x="61" y="219">
+                        <create-actor3 comment="false" x="61" y="407">
                             <actortype eid="25" id="0"/>
                             <int id="1" val="50"/>
-                            <int id="2" val="350"/>
+                            <int id="2" val="300"/>
                             <int id="3" val="0"/>
                         </create-actor3>
-                        <create-actor3 comment="false" x="61" y="246">
+                        <create-actor3 comment="false" x="61" y="434">
                             <actortype eid="27" id="0"/>
                             <int id="1" val="400"/>
-                            <int id="2" val="350"/>
+                            <int id="2" val="300"/>
                             <int id="3" val="0"/>
                         </create-actor3>
                     </group>

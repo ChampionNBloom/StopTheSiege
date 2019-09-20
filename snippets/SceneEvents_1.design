@@ -1,2 +1,112 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<groups/>
+<groups>
+    <group eventID="4" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="4" id="-1">
+                <set-val-21-1 comment="false" x="26" y="40">
+                    <int id="0" val="26"/>
+                </set-val-21-1>
+            </group>
+        </init>
+    </group>
+    <group eventID="4" id="-1"/>
+    <group eventID="5" id="0">
+        <event-collide-typetotype comment="false" x="15" y="15">
+            <group eventID="5" id="-1">
+                <set-val-21-1 comment="false" x="26" y="47">
+                    <minus comment="false" id="0" x="0" y="0">
+                        <get-val-21-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="1"/>
+                    </minus>
+                </set-val-21-1>
+                <if comment="false" x="26" y="77">
+                    <group eventID="5" id="-1">
+                        <stop-sounds comment="false" x="37" y="107"/>
+                        <play-sound4 comment="false" x="37" y="127">
+                            <int id="0" val="0"/>
+                            <sound eid="57" id="1"/>
+                        </play-sound4>
+                        <scene-change-through comment="false" x="37" y="154">
+                            <scene eid="3" id="0"/>
+                            <int id="1" val="2"/>
+                            <int id="2" val="0"/>
+                        </scene-change-through>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-21-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </eq>
+                </if>
+            </group>
+            <actortype eid="3" id="0"/>
+            <actortype eid="9" id="1"/>
+        </event-collide-typetotype>
+    </group>
+    <group eventID="5" id="-1"/>
+    <group eventID="6" id="0">
+        <event-collide-typetotype comment="false" x="15" y="15">
+            <group eventID="5" id="-1">
+                <set-val-21-1 comment="false" x="26" y="47">
+                    <minus comment="false" id="0" x="0" y="0">
+                        <get-val-21-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="1"/>
+                    </minus>
+                </set-val-21-1>
+                <if comment="false" x="26" y="77">
+                    <group eventID="6" id="-1">
+                        <stop-sounds comment="false" x="37" y="107"/>
+                        <play-sound4 comment="false" x="37" y="127">
+                            <int id="0" val="0"/>
+                            <sound eid="57" id="1"/>
+                        </play-sound4>
+                        <scene-change-through comment="false" x="37" y="154">
+                            <scene eid="3" id="0"/>
+                            <int id="1" val="2"/>
+                            <int id="2" val="0"/>
+                        </scene-change-through>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-21-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </eq>
+                </if>
+            </group>
+            <actortype eid="5" id="0"/>
+            <actortype eid="9" id="1"/>
+        </event-collide-typetotype>
+    </group>
+    <group eventID="6" id="-1"/>
+    <group eventID="7" id="0">
+        <event-collide-typetotype comment="false" x="15" y="15">
+            <group eventID="5" id="-1">
+                <set-val-21-1 comment="false" x="26" y="47">
+                    <minus comment="false" id="0" x="0" y="0">
+                        <get-val-21-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="1"/>
+                    </minus>
+                </set-val-21-1>
+                <if comment="false" x="26" y="77">
+                    <group eventID="7" id="-1">
+                        <stop-sounds comment="false" x="37" y="107"/>
+                        <play-sound4 comment="false" x="37" y="127">
+                            <int id="0" val="0"/>
+                            <sound eid="57" id="1"/>
+                        </play-sound4>
+                        <scene-change-through comment="false" x="37" y="154">
+                            <scene eid="3" id="0"/>
+                            <int id="1" val="2"/>
+                            <int id="2" val="0"/>
+                        </scene-change-through>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-21-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </eq>
+                </if>
+            </group>
+            <actortype eid="7" id="0"/>
+            <actortype eid="9" id="1"/>
+        </event-collide-typetotype>
+    </group>
+    <group eventID="7" id="-1"/>
+</groups>

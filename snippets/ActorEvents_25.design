@@ -8,6 +8,11 @@
                     <int id="1" val="1"/>
                     <int id="2" val=".25"/>
                 </scene-change-through>
+                <stop-sounds comment="false" x="26" y="69"/>
+                <play-sound4 comment="false" x="26" y="89">
+                    <int id="0" val="1"/>
+                    <sound eid="50" id="1"/>
+                </play-sound4>
             </group>
             <ACTOR eid="this" id="0"/>
             <int id="1" val="2"/>

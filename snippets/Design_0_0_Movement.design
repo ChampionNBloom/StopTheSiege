@@ -139,7 +139,16 @@
                 </comment-long>
                 <if comment="false" x="26" y="1112">
                     <group eventID="-1" id="-1">
-                        <scene-reload-new comment="false" x="37" y="1155">
+                        <set-volume-channel comment="false" x="37" y="1155">
+                            <int id="0" val="80"/>
+                            <int id="1" val="1"/>
+                        </set-volume-channel>
+                        <play-sound-channel comment="false" x="37" y="1175">
+                            <int id="0" val="0"/>
+                            <sound eid="55" id="1"/>
+                            <int id="2" val="1"/>
+                        </play-sound-channel>
+                        <scene-reload-new comment="false" x="37" y="1202">
                             <int id="0" val="0"/>
                             <int id="1" val="0.3"/>
                             <int id="2" val="0"/>
@@ -162,14 +171,20 @@
             </group>
         </step>
     </group>
+    <group eventID="1" id="1">
+        <play-sound4 comment="false" x="238" y="1251">
+            <int id="0" val="0"/>
+            <sound eid="55" id="1"/>
+        </play-sound4>
+    </group>
     <group eventID="1" id="-1">
-        <eq comment="false" x="701" y="532">
-            <int id="0" val=""/>
-            <int id="1" val="2"/>
-        </eq>
         <eq comment="false" x="453" y="626">
             <int id="0" val=""/>
             <int id="1" val=""/>
+        </eq>
+        <eq comment="false" x="701" y="532">
+            <int id="0" val=""/>
+            <int id="1" val="2"/>
         </eq>
     </group>
 </groups>
